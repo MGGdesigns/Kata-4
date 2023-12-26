@@ -33,7 +33,7 @@ public class SQLiteFoodLoader implements FoodLoader {
 
     private Food foodFrom(ResultSet resultSet) throws SQLException {
         return new Food(
-                resultSet.getString("FOODNAME"), resultSet.getString("SCIENTIFICNAME"), resultSet.getString("GROUP"), resultSet.getString("SUBROUP")
+                resultSet.getString("FOODNAME"), resultSet.getString("SCIENTIFICNAME"), resultSet.getString("GROUP"), resultSet.getString("SUBGROUP")
         );
     }
 
