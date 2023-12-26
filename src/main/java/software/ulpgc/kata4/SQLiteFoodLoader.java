@@ -19,7 +19,7 @@ public class SQLiteFoodLoader implements FoodLoader {
         return load(queryAll());
     }
 
-    private Object queryAll() throws SQLException {
+    private ResultSet queryAll() throws SQLException {
         return connection.createStatement().executeQuery(queryAll);
     }
 
